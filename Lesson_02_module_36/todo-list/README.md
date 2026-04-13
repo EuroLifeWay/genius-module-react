@@ -26,7 +26,7 @@ A simple and functional todo list app built with React.
 1. Clone the repository:
 
 ```bash
-git clone https://github.com
+git clone https://github.com/EuroLifeWay/genius-module-react/tree/main/Lesson_02_module_36/todo-list
 ```
 
 ## 📅 Roadmap
