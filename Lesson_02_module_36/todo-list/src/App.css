@@ -32,6 +32,17 @@
   text-decoration: line-through;
 }
 
+.todo-list-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.todo-item-flex-grow {
+  display: flex;
+  flex-grow: 1;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
