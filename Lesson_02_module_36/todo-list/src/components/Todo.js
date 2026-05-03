@@ -60,15 +60,19 @@ function App() {
   };
 
   const onToggleAll = () => {
+    const allDone = completedCount === totalCount;
     setItems(prevItems =>
-      prevItems.map(item =>
-        completedCount === totalCount
-          ? { ...item, completed: !item.completed }
-          : !item.completed
-            ? { ...item, completed: !item.completed }
-            : item,
-      ),
+      prevItems.map(item => ({ ...item, completed: !allDone })),
     );
+    // setItems(prevItems =>
+    //   prevItems.map(item =>
+    //     completedCount === totalCount
+    //       ? { ...item, completed: !item.completed }
+    //       : !item.completed
+    //         ? { ...item, completed: !item.completed }
+    //         : item,
+    //   ),
+    // );
   };
 
   const deleteCompletedHandler = () => {
